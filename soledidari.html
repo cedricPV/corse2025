@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORSE 2025</title>
+    <style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+			padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sejour {
+			background: #87CEFA;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 2px solid #ddd;
+			list-style: none;
+			border-radius: 10px;
+			width: 100%;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        iframe {
+            width: 100%;
+            height: 200px;
+            border: 0;
+            border-radius: 5px;
+        }
+		h1 {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		h2 {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		ul {
+			margin-bottom: 10px;
+			display: inline-block;
+			background: white;
+			padding: 20px;
+			list-style: none;
+			border-radius: 10px;
+			width: 100%;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+		li {
+			margin: 15px 0;
+		}
+		a {
+			text-decoration: none;
+			color: #007BFF;
+			font-size: 18px;
+			font-weight: bold;
+			transition: 0.3s;
+		}
+		a:hover {
+			color: white;
+			background: #007BFF;
+			padding: 8px 15px;
+			border-radius: 5px;
+		}
+
+
+		.carousel-wrapper {
+			position: relative;
+			align-items: center;
+			justify-content: center;
+		}
+		.carousel-container {
+			overflow: hidden;
+			width: 100%;
+			max-width: 600px;
+		}
+		.carousel {
+			display: flex;
+			transition: transform 0.5s ease-in-out;
+		}
+		.carousel-item {
+			min-width: 100%;
+			text-align: center;
+			padding: 10px;
+			background: #fff;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			border-radius: 10px;
+		}
+		.carousel-item img {
+			width: 100%;
+			border-radius: 10px;
+		}
+		.carousel-item h3 {
+			margin: 10px 0;
+		}
+		.carousel-item p {
+			font-size: 14px;
+			color: #555;
+		}
+		.carousel-item a {
+			display: block;
+			margin-top: 10px;
+			color: #007BFF;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		.prev, .next {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			background: rgba(0, 0, 0, 0.5);
+			color: white;
+			border: none;
+			padding: 15px;
+			cursor: pointer;
+			border-radius: 50%;
+			font-size: 20px;
+		}
+		.prev { left: -20px; }
+		.next { right: -20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+			<a href="index.html#soledidari">Retour</a>
+
+        <h1>Camping le Sagone</h1>
+		<ul>
+			<li><a href="#plages">Plages</a></li>
+			<li><a href="#randonnees">Randonnées</a></li>
+			<li><a href="#activites">Activités</a></li>
+			<li><a href="#autres">Autres</a></li>
+		</ul>
+
+        <div class="sejour">
+            <h2>SEJOUR Camping Sole Di Sari</h2>
+            <div class="option">
+                <h3>Camping Sole Di Sari</h3>
+				<p><a href="https://maps.app.goo.gl/PqwoeniH6u3fnmaf9" target="_blank">1000 Strada Di Bavella, 20145 Sari-Solenzara</a></p>
+                <a href="https://maps.app.goo.gl/PqwoeniH6u3fnmaf9" target="_blank"><img src="sole-di-sari.webp"></a>
+            </div>
+        </div>
+
+        <h2>Plages</h2>
+		<div class="carousel-wrapper" id="plages">
+			<button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+			<div class="carousel-container">
+				<div class="carousel">
+					<div class="carousel-item">
+						<a href="https://maps.app.goo.gl/MzjxkQe4ZqVt5vRV9" target="_blank">
+							<img src="plage_santa_guila.jpg">
+							<h3>Plage de Santa Giulia</h3>
+							<p><strong>Durée 00:50</strong></p>
+							<p>Sable blanc au pied d'une pinède l'eau est translucide...</p>
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="https://maps.app.goo.gl/kaHVsXQTscbdGjsz6" target="_blank">
+							<img src="plage_palombaggia.jpg">
+							<h3>Plage de Palombaggia</h3>
+							<p><strong>Durée 00:55</strong></p>
+							<p>Une des plus belles plages de corses, si ce n'est la plus belle...</p>
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href="https://maps.app.goo.gl/S6J5fyzPCBLX1tHx8" target="_blank">
+							<img src="plage_palombaggia.jpg">
+							<h3>Plage de Rondinara</h3>
+							<p><strong>Durée 01:05</strong></p>
+							<p>De forme bien arrondie, est une des plus magnifiques de l'île....</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<button class="next" onclick="moveSlide(1)">&#10095;</button>
+		</div>
+		<script>
+			let index = 0;
+			function moveSlide(step) {
+				const carousel = document.querySelector('#plages .carousel');
+				const items = document.querySelectorAll('#plages .carousel-item');
+				index = (index + step + items.length) % items.length;
+				carousel.style.transform = `translateX(${-index * 100}%)`;
+			}
+		</script>
+
+<!--
+		<h2 id="randonnees">Randonnées</h2>
+		<div class="carousel-container">
+		</div>
+
+		<h2 id="activites">Activités</h2>
+		<div class="carousel-container">
+		</div>
+
+		<h2 id="autres">Autres</h2>
+		<div class="carousel-container">
+		</div>
+-->
+	</div>
+
+</body>
+</html>
