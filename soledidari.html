@@ -1,64 +1,65 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CORSE 2025</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CORSE 2025</title>
 	<link rel="icon" href="favicon.ico" title="Corse 2025" />
 	<link rel="shortcut_icon" href="favicon.ico" title="Corse 2025" />
-    <style>
+	<style>
 		* {
 			margin: 0;
 			padding: 0;
 			box-sizing: border-box;
 		}
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
 			padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .sejour {
+			background-color: #f4f4f4;
+		}
+		.container {
+			max-width: 800px;
+			margin: auto;
+			background: white;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.sejour {
 			background: #87CEFA;
-            margin-bottom: 20px;
-            padding: 10px;
-            border-bottom: 2px solid #ddd;
+			margin-bottom: 20px;
+			padding: 10px;
+			border-bottom: 2px solid #ddd;
 			list-style: none;
 			border-radius: 10px;
 			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 		}
-        .option {
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        img {
-            width: 100%;
-            max-height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-        iframe {
-            width: 100%;
-            height: 200px;
-            border: 0;
-            border-radius: 5px;
-        }
+		.option {
+			margin: 10px 0;
+			padding: 10px;
+			border-radius: 5px;
+		}
+		img {
+			width: 100%;
+			max-height: 200px;
+			object-fit: cover;
+			border-radius: 5px;
+		}
+		iframe {
+			width: 100%;
+			height: 200px;
+			border: 0;
+			border-radius: 5px;
+		}
 		h1 {
 			margin-top: 20px;
 			margin-bottom: 20px;
 		}
 		h2 {
 			margin-top: 10px;
-			margin-bottom: 10px;
+			margin-bottom: 0px;
+			padding: 10px 0px 0px 10px;
 		}
 
 		ul {
@@ -70,9 +71,12 @@
 			border-radius: 10px;
 			width: 100%;
 			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			margin: 0;
+			padding: 10px;
 		}
 		li {
-			margin: 15px 0;
+			margin: 0;
+			padding: 3px;
 		}
 		.sommaire a {
 			text-decoration: none;
@@ -89,6 +93,12 @@
 		}
 
 
+		.bloc {
+			background: #fff;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+			border-radius: 10px;
+			margin-bottom: 30px;
+		}
 		.carousel-wrapper {
 			position: relative;
 			align-items: center;
@@ -105,10 +115,7 @@
 		.carousel-item {
 			min-width: 100%;
 			text-align: center;
-			padding: 10px;
-			background: #fff;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-			border-radius: 10px;
+			padding: 0px 20px 10px 20px;
 		}
 		.carousel-item img {
 			width: 100%;
@@ -126,7 +133,6 @@
 			margin-top: 10px;
 			color: #007BFF;
 			text-decoration: none;
-			font-weight: bold;
 		}
 		.prev, .next {
 			position: absolute;
@@ -142,39 +148,94 @@
 		}
 		.prev { left: -20px; }
 		.next { right: -20px; }
-    </style>
+
+		.rando_info_ligne {
+			display: inline-flex;
+			text-align: center;
+		}
+		.rando_info {
+			display: flex;
+			margin-left: 10px;
+			color: #555;
+			font-size: 12px;
+		}
+		.rando_info .css-nqigl7 {
+			height: 1rem;
+			width: 1rem;
+			display: block;
+			vertical-align: middle;
+		}
+		.rando_info p {
+			margin-left: 4px;
+		}
+		.niveau-facile {
+			-webkit-align-items: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			background-color: #4379b2;
+			border-radius: 4px;
+			color: white;
+			display: -webkit-inline-flex;
+			display: -ms-inline-flexbox;
+			display: inline-flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			min-width: 2em;
+			text-align: center;
+			font-size: 12px;
+			font-weight: 700;
+			padding-left: 0.5em;
+			padding-right: 0.5em;
+			padding-top: 0.25em;
+			padding-bottom: 0.25em;
+			text-transform: inherit;
+			margin-left: 15px;
+		}
+	</style>
 </head>
 <body>
-    <div class="container">
-			<a href="index.html#soledidari">Retour</a>
+<div class="container">
+	<a href="index.html#soledidari">Retour</a>
 
-        <h1>Camping le Sagone</h1>
+	<h1>Camping le Sagone</h1>
+	<div class="bloc">
 		<ul class="sommaire">
 			<li><a href="#plages">Plages</a></li>
+			<li><a href="#bateaux">Bâteaux</a></li>
 			<li><a href="#randonnees">Randonnées</a></li>
 			<li><a href="#activites">Activités</a></li>
 			<li><a href="#autres">Autres</a></li>
 		</ul>
+	</div>
 
-        <div class="sejour">
-            <h2>SEJOUR Camping Sole Di Sari</h2>
-            <div class="option">
-                <h3>Camping Sole Di Sari</h3>
-				<p><a href="https://maps.app.goo.gl/PqwoeniH6u3fnmaf9" target="_blank">1000 Strada Di Bavella, 20145 Sari-Solenzara</a></p>
-                <a href="https://maps.app.goo.gl/PqwoeniH6u3fnmaf9" target="_blank"><img src="sole-di-sari.webp"></a>
-            </div>
-        </div>
+	<div class="sejour">
+		<h2>SEJOUR Camping Sole Di Sari</h2>
+		<div class="option">
+			<h3>Camping Sole Di Sari</h3>
+			<p><a href="https://maps.app.goo.gl/PqwoeniH6u3fnmaf9" target="_blank">1000 Strada Di Bavella, 20145 Sari-Solenzara</a></p>
+			<a href="https://maps.app.goo.gl/PqwoeniH6u3fnmaf9" target="_blank"><img src="sole-di-sari.webp"></a>
+		</div>
+	</div>
 
-        <h2>Plages</h2>
-		<div class="carousel-wrapper" id="plages">
-			<button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+	<div class="bloc" id="plages">
+		<h2>Plages</h2>
+		<div class="carousel-wrapper">
+			<button class="prev" onclick="moveSlidePlages(-1)">&#10094;</button>
 			<div class="carousel-container">
 				<div class="carousel">
 					<div class="carousel-item">
 						<a href="https://maps.app.goo.gl/MzjxkQe4ZqVt5vRV9" target="_blank">
 							<img src="plage_santa_guila.jpg">
 							<h3>Plage de Santa Giulia</h3>
-							<p><strong>Durée 00:50</strong></p>
+							<div class="rando_info_ligne">
+								<div class="rando_info">
+									<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-nqigl7"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 2L5 20.29l.71.71 6.79-3 6.79 3 .71-.71L12.5 2z" fill="currentColor"></path></svg>
+									<p>00:55</p>
+								</div>
+							</div>
 							<p>Sable blanc au pied d'une pinède l'eau est translucide...</p>
 						</a>
 					</div>
@@ -182,7 +243,12 @@
 						<a href="https://maps.app.goo.gl/kaHVsXQTscbdGjsz6" target="_blank">
 							<img src="plage_palombaggia.jpg">
 							<h3>Plage de Palombaggia</h3>
-							<p><strong>Durée 00:55</strong></p>
+							<div class="rando_info_ligne">
+								<div class="rando_info">
+									<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-nqigl7"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 2L5 20.29l.71.71 6.79-3 6.79 3 .71-.71L12.5 2z" fill="currentColor"></path></svg>
+									<p>00:55</p>
+								</div>
+							</div>
 							<p>Une des plus belles plages de corses, si ce n'est la plus belle...</p>
 						</a>
 					</div>
@@ -190,24 +256,31 @@
 						<a href="https://maps.app.goo.gl/S6J5fyzPCBLX1tHx8" target="_blank">
 							<img src="plage_rondinara.jpg">
 							<h3>Plage de Rondinara</h3>
-							<p><strong>Durée 01:05</strong></p>
+							<div class="rando_info_ligne">
+								<div class="rando_info">
+									<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-nqigl7"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 2L5 20.29l.71.71 6.79-3 6.79 3 .71-.71L12.5 2z" fill="currentColor"></path></svg>
+									<p>01:05</p>
+								</div>
+							</div>
 							<p>De forme bien arrondie, est une des plus magnifiques de l'île....</p>
 						</a>
 					</div>
 				</div>
 			</div>
-			<button class="next" onclick="moveSlide(1)">&#10095;</button>
+			<button class="next" onclick="moveSlidePlages(1)">&#10095;</button>
 		</div>
 		<script>
 			let index = 0;
-			function moveSlide(step) {
+			function moveSlidePlages(step) {
 				const carousel = document.querySelector('#plages .carousel');
 				const items = document.querySelectorAll('#plages .carousel-item');
 				index = (index + step + items.length) % items.length;
 				carousel.style.transform = `translateX(${-index * 100}%)`;
 			}
 		</script>
+	</div>
 
+	<div class="bloc" id="bateaux">
 		<h2>Bateau + Baignades</h2>
 		<div class="carousel-wrapper" onclick="location.href='https://www.portovecchio-croisieres.com/croisiere'">
 			<div class="carousel-container">
@@ -223,21 +296,74 @@
 				</div>
 			</div>
 		</div>
-
-<!--
-		<h2 id="randonnees">Randonnées</h2>
-		<div class="carousel-container">
-		</div>
-
-		<h2 id="activites">Activités</h2>
-		<div class="carousel-container">
-		</div>
-
-		<h2 id="autres">Autres</h2>
-		<div class="carousel-container">
-		</div>
--->
 	</div>
+
+	<div class="bloc" id="randonnees">
+		<h2>Randonnées Baignades</h2>
+		<div class="carousel-wrapper">
+			<button class="prev" onclick="moveSlideRandonnees(-1)">&#10094;</button>
+			<div class="carousel-container">
+				<div class="carousel">
+					<div class="carousel-item">
+						<a href="https://www.komoot.com/fr-fr/smarttour/28927834" target="_blank">
+							<img src="images/fiumicelli.webp">
+							<h3>Fiumicelli au départ de Solaro</h3>
+							<p>la baignade est de mise - Entrée dans les Fiumicelli au départ de Solaro...</p>
+						</a>
+						<a href="https://maps.app.goo.gl/Jy7LKsqhSGk4PLav8" target="_blank">
+							<div class="rando_info_ligne">
+								<div class="rando_info">
+									<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-nqigl7"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 2L5 20.29l.71.71 6.79-3 6.79 3 .71-.71L12.5 2z" fill="currentColor"></path></svg>
+									<p>15 mn</p>
+								</div>
+								<div class="niveau-facile">Facile</div>
+							</div>
+						</a>
+						<a href="https://www.komoot.com/fr-fr/smarttour/28927834" target="_blank">
+							<div class="rando_info_ligne">
+								<div class="rando_info">
+									<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-nqigl7"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 1H9v2h6V1zm-4 13h2V8h-2v6zm8.03-6.61l1.42-1.42c-.43-.51-.9-.99-1.41-1.41l-1.42 1.42A8.962 8.962 0 0012 4a9 9 0 00-9 9c0 4.97 4.02 9 9 9a8.994 8.994 0 007.03-14.61zM12 20c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z" fill="currentColor"></path></svg>
+									<p>01:22</p>
+								</div>
+								<div class="rando_info">
+									<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-nqigl7"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.17 13l-3.58 3.59L16 18l6-6-6-6-1.41 1.41L18.17 11H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13h12.34z" fill="currentColor"></path></svg>
+									<p>5,02 km</p>
+								</div>
+								<div class="rando_info">
+									<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-nqigl7"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.974 19.435l10.02-10.02.007 5.07h1.994V6H9.51v1.994l5.07.007-10.02 10.02 1.414 1.414z" fill="currentColor"></path></svg>
+									<p>70 m</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<button class="next" onclick="moveSlideRandonnees(1)">&#10095;</button>
+		</div>
+		<script>
+			let index = 0;
+			function moveSlideRandonnees(step) {
+				const carousel = document.querySelector('#randonnees .carousel');
+				const items = document.querySelectorAll('#randonnees .carousel-item');
+				index = (index + step + items.length) % items.length;
+				carousel.style.transform = `translateX(${-index * 100}%)`;
+			}
+		</script>
+	</div>
+	<!--
+            <h2 id="randonnees">Randonnées</h2>
+            <div class="carousel-container">
+            </div>
+
+            <h2 id="activites">Activités</h2>
+            <div class="carousel-container">
+            </div>
+
+            <h2 id="autres">Autres</h2>
+            <div class="carousel-container">
+            </div>
+    -->
+</div>
 
 </body>
 </html>
