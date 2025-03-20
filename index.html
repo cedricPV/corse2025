@@ -9,6 +9,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+			font-size: 12px;
             margin: 0;
             padding: 20px;
             background-color: #f4f4f4;
@@ -31,7 +32,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .sejour {
-			background: #87CEFA;
+			background: #bae1f5;
             margin-bottom: 40px;
             padding: 10px;
             border-bottom: 2px solid #ddd;
@@ -56,6 +57,31 @@
             border: 0;
             border-radius: 5px;
         }
+		h2 {
+			text-align: center;
+		}
+		h3 {
+			margin: 0px;
+			padding: 0px;
+		}
+		.bouton {
+			display: inline-block;
+			padding: 10px 15px;
+			background-color: #007BFF;
+			color: white;
+			text-decoration: none;
+			border-radius: 5px;
+			font-weight: bold;
+			text-align: center;
+			min-height: 40px; /* Hauteur suffisante pour bien centrer */
+			display: flex;
+			align-items: center; /* Centre le texte dans le bouton */
+			justify-content: center;
+            max-width: 200px;
+        }
+        .bouton:hover {
+            background: #003d82;
+        }
     </style>
 </head>
 <body>
@@ -63,11 +89,14 @@
         <h1 style="text-align: center;">CORSE 2025</h1>
 
         <div class="step">
-            <a href="https://maps.app.goo.gl/7RVL7jx4VQSPwRHcA" target="_blank" style="text-decoration: none;color: inherit;">
-                <h2>Saint Jeure d'Ay - TOULON</h2>
-                <h3>Bateau pour Ajaccio Corsica 253187685/86</h3>
-                <img src="images/bateau.jpg" style="max-height: 75px;">
+			<h2>Saint Jeure d'Ay - TOULON</h2>
+            <a href="https://maps.app.goo.gl/7RVL7jx4VQSPwRHcA" target="_blank" style="text-decoration: none;color: inherit; display: flex; align-items: center; gap: 15px;">
+                <img src="images/bateau.jpg" style="max-width: 110px;height: 60px;border-radius: 5px;">
+                <div style="width: 100%">
+					<h3>Bateau pour Ajaccio Corsica 253187685/86</h3>
+				</div>
             </a>
+			<hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
             <div class="option">
                 <p>Le 16/07/2025 à 21:00 - Arrivée le lendemain à 07:30</p>
                 <p>Trajet : <a href="https://maps.app.goo.gl/7RVL7jx4VQSPwRHcA" target="_blank">2 av. de l'Infanterie de Marine, 83000 Toulon</a> (Durée: 03:15)</p>
@@ -76,19 +105,29 @@
         </div>
 
         <div class="step" id="ajaccio">
-            <a href="ajaccio.html" style="text-decoration: none;color: inherit;">
-                <h2>Trajet AJACCIO - Camping Sole Di Sari</h2>
-                <img src="images/voiture.png" style="max-height: 75px;">
-            </a>
+            <h2>AJACCIO - Camping Sole Di Sari</h2>
+            <div style="text-decoration: none;color: inherit; display: flex; align-items: center; gap: 15px;">
+                <img src="images/voiture.png" style="max-width: 110px;height: 60px;border-radius: 5px;">
+				<div style="width: 100%;">
+					<a href="ajaccio.html" class="bouton">Proposition 1er journée</a>
+				</div>
+            </div>
+			<hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
             <div class="option">
                 <p>Trajet : <a href="https://maps.app.goo.gl/PqwoeniH6u3fnmaf9" target="_blank">1000 Strada Di Bavella, 20145 Sari-Solenzara</a> (Durée: 03:00)</p>
-                <p><a href="ajaccio.html">Proposition pour cette première journée...</a></p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d294898.725348422!2d9.032661221250024!3d41.916281581048345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x12da694200066231%3A0x69317a5e240005ad!2sAjaccio%2C%2020000%20Ajaccio!3m2!1d41.9192257!2d8.7386172!4m5!1s0x12d9ed46ecbc7bdd%3A0xa88b2c05f91b4673!2sSole%20di%20Sari%2C%20Strada%20Di%20Bavella%2C%20Sari-Solenzara!3m2!1d41.865484599999995!2d9.3869359!5e1!3m2!1sfr!2sfr!4v1739612774272!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
 
         <div class="sejour" id="soledidari" onclick="location.href='soledidari.html'">
             <h2>SEJOUR Camping Sole Di Sari</h2>
+            <div style="text-decoration: none;color: inherit; display: flex; align-items: center; gap: 15px;">
+                <img src="images/tente.png" style="max-width: 110px;height: 60px;border-radius: 5px;">
+                <div style="width: 100%;">
+                    <a href="soledidari.html" class="bouton">Activités <br> première semaine</a>
+                </div>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
             <div class="option">
                 <h3>Camping Sole Di Sari</h3>
 				<p><a href="https://maps.app.goo.gl/PqwoeniH6u3fnmaf9" target="_blank">1000 Strada Di Bavella, 20145 Sari-Solenzara</a></p>
@@ -97,12 +136,15 @@
         </div>
 
         <div class="step">
-            <a href="verssagone.html" style="text-decoration: none;color: inherit;">
-                <h2>Camping Sole Di Sari - Camping Le Sagone</h2>
-                <img src="images/voiture.png" style="max-height: 75px;">
-            </a>
+            <h2>Camping Sole Di Sari - Camping Le Sagone</h2>
+            <div style="text-decoration: none;color: inherit; display: flex; align-items: center; gap: 15px;">
+                <img src="images/voiture.png" style="max-width: 110px;height: 60px;border-radius: 5px;">
+                <div style="width: 100%;">
+                    <a href="verssagone.html" class="bouton">Etape sur le trajet</a>
+                </div>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
             <div class="option">
-                <p><a href="verssagone.html">Proposition pour cette journée de transition...</a></p>
                 <p>Trajet : <a href="https://maps.app.goo.gl/k5p7RATpHcWzDi4g9" target="_blank">Camping Le Sagone Route de Vico, 20118 Vico</a> (Durée: 01:54)<p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d350930.55858313123!2d8.983978295517932!3d42.07789156316103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x12d9ed46ecbc7bdd%3A0xa88b2c05f91b4673!2sSole%20di%20Sari%2C%20Strada%20Di%20Bavella%2C%20Sari-Solenzara!3m2!1d41.865484599999995!2d9.3869359!4m5!1s0x12da70e03fc3f26f%3A0x6eb5dd18ce1c6cee!2sCamping%20Le%20Sagone%2C%20Route%20de%20Vico%2C%20Vico!3m2!1d42.130264!2d8.705603!5e1!3m2!1sfr!2sfr!4v1739612838279!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -110,19 +152,29 @@
 
 		<div class="sejour" id="sagone" onclick="location.href='sagone.html'">
             <h2>Séjour Camping Le Sagone</h2>
+            <div style="text-decoration: none;color: inherit; display: flex; align-items: center; gap: 15px;">
+                <img src="images/tente.png" style="width: 110px;height: 60px;border-radius: 5px;">
+                <div style="width: 100%;">
+                    <a href="sagone.html" class="bouton">Activités <br> deuxième semaine</a>
+                </div>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
             <div class="option">
                 <h3>Camping Le Sagone</h3>
 				<p><a href="https://maps.app.goo.gl/k5p7RATpHcWzDi4g9" target="_blank">Route de Vico, 20118 Vico</a></p>
                 <a href="https://maps.app.goo.gl/k5p7RATpHcWzDi4g9" target="_blank"><img src="images/sagone.jpg"></a>
             </div>
         </div>
-        
+
 		<div class="step">
-            <a href="https://maps.app.goo.gl/P7aSse8oFeznxYFN6" target="_blank" style="text-decoration: none;color: inherit;">
-                <h2>Camping Le Sagone - Ile Rousse</h2>
-                <h3>Bateau pour Toulon retour 253187685/86</h3>
-                <img src="images/bateau.jpg" style="max-height: 75px;">
+            <h2>Camping Le Sagone - Ile Rousse</h2>
+            <a href="https://maps.app.goo.gl/P7aSse8oFeznxYFN6" target="_blank" style="text-decoration: none;color: inherit; display: flex; align-items: center; gap: 15px;">
+                <img src="images/bateau.jpg" style="max-width: 110px;height: 60px;border-radius: 5px;">
+                <div style="width: 100%">
+                    <h3>Bateau pour Toulon retour 253187685/86</h3>
+                </div>
             </a>
+            <hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
             <div class="option">
 				<p>Le 31/07/2025 à 14:15 - Arrivée à 23:00</p>
 				<p>Trajet : <a href="https://maps.app.goo.gl/P7aSse8oFeznxYFN6" target="_blank">Gare Maritime, 20220 L'Ile Rousse</a> (Durée: 02:30)</p>
