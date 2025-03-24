@@ -444,7 +444,7 @@
 				<div class="carousel">
 					<div class="carousel-item">
 						<a href="https://www.visorando.com/randonnee-boucle-bavella-velaco-le-promontoire-bav/" target="_blank">
-							<img src="images/bavella_falaise.png">
+							<img src="images/bavella_falaise.jpg">
 							<h3>Boucle Bavella - Velaco - le Promontoire - Bavella</h3>
 							<p>Boucle qui permet de visiter les différents points remarquables du massif. De magnifiques vues sur trou de la bombe, les ravins de la Punta Velacu et de la Calanca Murata et, le tout, avec moins de 500 m de dénivelé.</p>
 						</a>
@@ -567,22 +567,53 @@
 						<h3>Canyoning</h3>
 						<p>
 							<strong>De 50€ à 100€</strong><br/>
-							<a href="https://corserandocanyon.com/">CORSE RANDO CANYON (tarif groupe à 5)</a>
-							<a href="https://corse-canyoning-parc.com/canyoning-bavella-solenzara/">acqua & natura - Parc aventure</a>
-							<a href="https://www.corsica-forest.com/">Corsica Forest Canyoning</a>
-							<a href="https://odyssee-canyon.com/">Canyon Fiumicelli</a>
-							<a href="https://www.canyoningcorse.fr/">Canyon du Pulischellu</a>
+							<a target="_blank" href="https://corserando anyon.com/">CORSE RANDO CANYON (tarif groupe à 5)</a>
+							<a target="_blank" href="https://corse-canyoning-parc.com/canyoning-bavella-solenzara/">acqua & natura - Parc aventure</a>
+							<a target="_blank" href="https://www.corsica-forest.com/">Corsica Forest Canyoning</a>
+							<a target="_blank" href="https://odyssee-canyon.com/">Canyon Fiumicelli</a>
+							<a target="_blank" href="https://www.canyoningcorse.fr/">Canyon du Pulischellu</a>
+						</p>
+					</div>
+
+					<div class="carousel-item">
+						<img src="images/velo.png">
+						<h3>Vélo électrique</h3>
+						<p>
+							<strong>65€ journée</strong><br/>
+							<a target="_blank" href="https://www.solinbike.com/">Balade vtt éléctrique Chisa</a>
+						</p>
+					</div>
+
+					<div class="carousel-item">
+						<img src="images/accrobranche.png">
+						<h3>Accrobranche</h3>
+						<p>
+							<a target="_blank" href="https://corse-canyoning-parc.com/accrobranche-bavella-solenzara/">acqua è natura canyoning parc aventure</a>
+							<a target="_blank" href="https://www.visit-corsica.com/fr/Mon-sejour/Activites-Loisirs/Toutes-les-activites/FOREST-PARC">Forest Parc</a>
+							<a target="_blank" href="https://www.visit-corsica.com/fr/Mon-sejour/Activites-Loisirs/Toutes-les-activites/G.-AVENTURA">G-Aventura - Accrobranche</a>
+						</p>
+					</div>
+
+					<div class="carousel-item">
+						<img src="images/marche.png">
+						<h3>Marché</h3>
+						<p>
+							<a target="_blank" href="https://maps.app.goo.gl/PbtJeN6Baj3c5Ycp9">Sari-Solenzara : Lundi</a>
+							<a target="_blank" href="https://maps.app.goo.gl/Fqww31WVvCkP5CJN6">Prunelli-di-Fiumorbo : Lundi / Mercredi</a>
+							<a target="_blank" href="https://maps.app.goo.gl/fRsiyZ8cbGeRxUVA7">Ghisonaccia : Jeudi</a>
+							<a target="_blank" href="https://maps.app.goo.gl/qPFCdEn57Ey4mirR8">Porto-Vecchio : Mercredi / Dimanche</a>
 						</p>
 					</div>
 				</div>
 			</div>
+
 			<button class="next" onclick="moveSlideActivites(1)">&#10095;</button>
 		</div>
 		<script>
 			let indexActivites = 0;
 			function moveSlideActivites(step) {
-				const carousel = document.querySelector('#plages .carousel');
-				const items = document.querySelectorAll('#plages .carousel-item');
+				const carousel = document.querySelector('#activites .carousel');
+				const items = document.querySelectorAll('#activites .carousel-item');
 				indexActivites = (indexActivites + step + items.length) % items.length;
 				carousel.style.transform = `translateX(${-indexActivites * 100}%)`;
 			}
