@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORSE 2025</title>
+    <link rel="icon" href="favicon.ico" title="Corse 2025" />
+    <link rel="shortcut_icon" href="favicon.ico" title="Corse 2025" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sejour {
+            background: #87CEFA;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 2px solid #ddd;
+            list-style: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .option {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        iframe {
+            width: 100%;
+            height: 200px;
+            border: 0;
+            border-radius: 5px;
+        }
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 10px;
+            margin-bottom: 0px;
+            padding: 10px 0px 0px 10px;
+        }
+
+        ul {
+            margin-bottom: 10px;
+            display: inline-block;
+            background: white;
+            padding: 20px;
+            list-style: none;
+            border-radius: 10px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0;
+            padding: 10px;
+        }
+        li {
+            margin: 0;
+            padding: 3px;
+        }
+        .sommaire a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .sommaire a:hover {
+            color: white;
+            background: #007BFF;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+
+        .bloc {
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .carousel-wrapper {
+            position: relative;
+            align-items: center;
+            justify-content: center;
+        }
+        .carousel-container {
+            overflow: hidden;
+            width: 100%;
+        }
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-item {
+            min-width: 100%;
+            text-align: center;
+            padding: 0px 20px 10px 20px;
+        }
+        .carousel-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .carousel-item h3 {
+            margin: 10px 0;
+        }
+        .carousel-item p {
+            font-size: 14px;
+            color: #555;
+        }
+        .carousel-item a {
+            display: block;
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+        .prev { left: -20px; }
+        .next { right: -20px; }
+
+        .rando_info_ligne {
+            display: inline-flex;
+            text-align: center;
+        }
+        .rando_info {
+            display: flex;
+            margin-left: 10px;
+            color: #555;
+            font-size: 12px;
+        }
+        .rando_info .css-nqigl7 {
+            height: 1rem;
+            width: 1rem;
+            display: block;
+            vertical-align: middle;
+        }
+        .rando_info p {
+            margin-left: 4px;
+        }
+        .niveau-facile {
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background-color: #4379b2;
+            border-radius: 4px;
+            color: white;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            min-width: 2em;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 700;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+            text-transform: inherit;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="index.html#ajaccio">Retour</a>
+
+    <h1>PROCHE DE TOULON</h1>
+    <div class="rando_info_ligne">
+        <a href="https://maps.app.goo.gl/PqwoeniH6u3fnmaf9" target="_blank">
+            <div class="rando_info">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-nqigl7"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 2L5 20.29l.71.71 6.79-3 6.79 3 .71-.71L12.5 2z" fill="currentColor"></path></svg>
+                <p>Bâteau : <a href="https://maps.app.goo.gl/7RVL7jx4VQSPwRHcA" target="_blank">2 av. de l'Infanterie de Marine, 83000 Toulon</a></p>
+            </div>
+        </a>
+    </div>
+
+    <h2>En attendant le bâteau...</h2>
+    <br/>
+    <div class="bloc">
+        <div class="carousel-wrapper">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <a href="https://maps.app.goo.gl/HNBwWQmB5ceEd33d6" target="_blank">
+                            <h3>Toulon - Plage de l'Anse de Méjean</h3>
+                            <p>Parking très petit</p>
+                            <img src="images/toulon_ansemejean.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bloc">
+        <div class="carousel-wrapper">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <a href="https://maps.app.goo.gl/FWfxY9khwzrcVzRf8" target="_blank">
+                            <h3>Toulon - Plages et criques de la Mitre</h3>
+                            <p>Au plus proche du port - parking petit sinon viser les parkings du centre à 15mn</p>
+                            <img src="images/toulon_mitre.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bloc">
+        <div class="carousel-wrapper">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <a href="https://maps.app.goo.gl/Jn744ioRE7WmttJC8" target="_blank">
+                            <h3>Toulon - Les plages du Mourillon </h3>
+                            <p>Grandes plages centrales de Toulon - Nombreux grands parkings</p>
+                            <img src="images/toulon_mouillon.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bloc">
+        <div class="carousel-wrapper">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <a href="https://maps.app.goo.gl/EjDaGFErzkqEPYM6A" target="_blank">
+                            <h3>Le Pradet - Plage du Monaco</h3>
+                            <p>Plusieurs plages accessibles : Le pradet => Plage du Monaco + Plage des Bonnettes</p>
+                            <img src="images/plage_pradet.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bloc">
+        <div class="carousel-wrapper">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <a href="https://maps.app.goo.gl/hZbMArmxrTrvZULc7" target="_blank">
+                            <h3>Seyne-sur-Mer - Plage Fabregas</h3>
+                            <p>Plages La Seyne-sur-Mer</p>
+                            <img src="images/seyne-sur-mer.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
