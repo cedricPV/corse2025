@@ -330,7 +330,8 @@
 
 	<div class="bloc" id="bateaux">
 		<h2>Bâteau + Baignades</h2>
-		<div class="carousel-wrapper" onclick="location.href='https://www.portovecchio-croisieres.com/croisiere'">
+		<div class="carousel-wrapper">
+			<button class="prev" onclick="moveSlideBateau(-1)">&#10094;</button>
 			<div class="carousel-container">
 				<div class="carousel">
 					<div class="carousel-item">
@@ -339,12 +340,39 @@
 							<h3>Les îles Lavezzi</h3>
 						</a>
 						<p>Bonifacio - îles Lavezzi - îles Cerbicale</p>
-						<p><a href="https://www.portovecchio-croisieres.com/tarifs" target="_blank">Journée - 08:30 : 65€ par pers ou 85€ avec repas - gros bâteau (durée 09:00)</a></p>
-						<p><a href="https://www.corsicasudcroisieres.com/nos-circuits/excursion-decouverte-iles-lavezzi-20" target="_blank">Après midi - 13:30 : 70€ par pers - bâteau 12 (durée 04:00)</a></p>
+						<p><a href="https://www.portovecchio-croisieres.com/tarifs" target="_blank">Portovecchio croisieres => Journée - 08:30 : 65€ par pers ou 85€ avec repas - gros bâteau (durée 09:00)</a></p>
+						<p><a href="https://www.amour-des-iles.com/excursion-croisiere-journee-sans-repas-3" target="_blank">Chiocca croisières => Journée - 09:00 : 65€ par pers (40€ moins 12 ans) - gros bâteau (durée 09:00)</a></p>
+						<p><a href="https://www.corsicasudcroisieres.com/nos-circuits/excursion-decouverte-iles-lavezzi-20" target="_blank">Corsica Sud croisières => Après midi - 13:30 : 70€ par pers - bâteau 12 (durée 04:00)</a></p>
+						<hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
+						<p>Navette Bonifacio - îles Lavezzi</p>
+						<p><a href="https://www.spmbonifacio.com/circuits?ancre=zone14" target="_blank">
+							Pour aller à Bonifacio 01:15<br/>
+							Navette Bâteau SPMB : 30mn - Départ toutes les heures<br/>
+							Adultes : 36€ - Enfants (-12 ans) : 26€
+						</a></p>
+					</div>
+
+					<div class="carousel-item">
+						<a href="https://maps.app.goo.gl/RuyZ7YRrR1p5mqgg7" target="_blank">
+							<img src="images/poussvague.jpg" style="height: 100%;width: auto;">
+							<h3>Location de bâteau</h3>
+						</a>
+						<p>POUSS'VAGUE - Sud Corse</p>
+						<p><a href="https://www.mer-et-nautisme.fr/location-vente/alpha-450/?portfolioCats=7%2C8%2C9" target="_blank">150 € la journée</a></p>
 					</div>
 				</div>
 			</div>
+			<button class="next" onclick="moveSlideBateau(1)">&#10095;</button>
 		</div>
+		<script>
+			let indexBateau = 0;
+			function moveSlideBateau(step) {
+				const carousel = document.querySelector('#bateaux .carousel');
+				const items = document.querySelectorAll('#bateaux .carousel-item');
+				indexBateau = (indexBateau + step + items.length) % items.length;
+				carousel.style.transform = `translateX(${-indexBateau * 100}%)`;
+			}
+		</script>
 	</div>
 
 	<div class="bloc" id="randonnees">
